@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jolin's Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;800&family=Roboto:wght@300;400&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      scroll-behavior: smooth;
+      font-family: 'Roboto', sans-serif;
+      background-color: #fff;
+    }
+
+    section {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 20px;
+      flex-direction: column;
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    nav {
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1000;
+      background: #fff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 400;
+      color: #000;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .title {
+      font-family: 'Playfair Display', serif;
+      font-size: 5rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -2px;
+    }
+
+    .subtitle {
+      font-size: 1.5rem;
+      font-weight: 300;
+      margin-top: 1rem;
+      max-width: 600px;
+    }
+
+    .bio-text {
+      font-size: 1rem;
+      font-weight: 300;
+      max-width: 700px;
+      line-height: 1.6;
+      margin-top: 1.5rem;
+    }
+
+    .home-image {
+      margin-top: 30px;
+      width: 300px;
+      height: auto;
+      filter: grayscale(100%);
+      border-radius: 8px;
+    }
+
+    .project-gallery, .image-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .project-gallery div, .image-gallery img {
+      width: 300px;
+      height: 400px;
+      background-color: #eee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    .image-gallery img {
+      object-fit: cover;
+    }
+
+    .extra-space {
+      margin-top: 250px;
+    }
+
+    footer {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    footer a {
+      color: #007acc;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#marketing">Marketing</a>
+  <a href="#ux">UX Design</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+  <div class="title">PORTFOLIO</div>
+  <img src="images/home-image.jpg" >
+  <div class="subtitle">Jolin Li</div>
+</section>
+
+<section id="about">
+  <div class="title">About Me</div>
+  <div class="subtitle">Hi! I’m Jolin Li</div>
+  <p class="bio-text">
+    I'm a designer and storyteller currently studying at the Stratford School of Interaction Design and Business. I’m passionate about crafting digital experiences that are both intuitive and emotionally resonant.<br><br>
+    At the University of Waterloo, I’ve been exploring the intersection of technology, creativity, and human connection, learning how thoughtful design can shape the way people interact with the world and each other. My work blends clean aesthetics with meaningful function, whether I’m prototyping interfaces, designing visual identities, or curating digital content.<br><br>
+    Outside of the classroom, I draw inspiration from fashion, photography, and everyday conversations. I believe that great design starts with empathy and grows through collaboration.<br><br>
+    Let’s connect and create something impactful.
+  </p>
+</section>
+
+<section id="marketing">
+  <div class="title">Marketing</div>
+  <div class="project-gallery">
+    <div>Social Campaign</div>
+    <div>Brand Launch</div>
+  </div>
+</section>
+
+<section id="ux" class="extra-space">
+  <div class="title">UX Design</div>
+  <div class="image-gallery">
+    <img src="images/image1.jpg" alt="UX Work 1">
+    <img src="images/image2.jpg" alt="UX Work 2">
+    <img src="images/image3.jpg" alt="UX Work 3">
+    <img src="images/image4.jpg" alt="UX Work 4">
+    <img src="images/image5.jpg" alt="UX Work 5">
+  </div>
+</section>
+
+<section id="contact">
+  <div class="title">Let's Connect</div>
+  <div class="subtitle">
+    <a href="mailto:yourname@uwaterloo.ca">yourname@uwaterloo.ca</a><br>
+    <a href="https://uwaterloo.ca" target="_blank">University of Waterloo</a>
+  </div>
+</section>
+
+</body>
+</html>
